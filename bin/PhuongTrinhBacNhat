@@ -1,9 +1,0 @@
-import java.util scanner
-//giai phuong trinh bac nhat
-public class PhuongTrinhBacNhat {
-
-    public static void main (string[]args) {
-        
-
-    }
-}

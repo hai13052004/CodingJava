@@ -1,25 +1,38 @@
-import java.util.scanner
+
+import java.util.scanner;
 //giai phuong trinh bac nhat
 public class PhuongTrinhBacNhat {
      public static void main(String[]args) {
-        Scanner heSoA = new Scanner(System.in);
-        System.out.print("nhập giá trị a:");
-        double a= scanner.nextDouble();
-        System.out.print("nhập giá trị b:");
-        double b=  scanner.nextDouble();
-        giaiPhuongTrinhBacNhat(a,b);
-        scanner.close();
-}
-private static void giaiPhuongTrinhBacNhat(double a, double b) {
-      if (a == 0) {
-           if (b == 0) {
-            System.out.println("Phương trình có vô số nghiệm.");
-            } else {
-                System.out.println("Phương trình vô nghiệm.");
-           }
-        }    else {
-            double x = -b / a;
-            System.out.println("Nghiệm của phương trình là x = " + x);
-     }              
-}
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("nhap he so a:");
+        double a = scanner.nextDouble();
+
+        System.out.println("nhap he so b:");
+        double b = scanner.nextDouble();
+
+        System.out.println("nhap he so c:");
+        double ac = scanner.nextDouble();
+
+        double delta=b*b-4*a*c;
+
+        if(delta>0)
+        {
+          double x1=(-b+ Math.sqrt(delta))/(2*a);
+          double x2=(-b- Math.sqrt(delta))/(2*a);
+
+          System.out.println("phuong trinh co 2 nghiem la x1="+x1+" va x2="+x 2");
+
+
+        } else if (delta==0) {
+          double=-b/(2*a);
+          System.out.println("phuong" trinh co nghiem kep x="+x");
+          else{
+               System.out.println("phuong" trinh vo nghiem");
+
+     
+          }
+        }
+
+
 }
